@@ -278,7 +278,7 @@ float 奖励函数(ground 场地, std::vector<building>& 建筑, bool& reset)
 			{
 				for (int l = 0; l < 16; l++)
 				{
-					分数 += -exp(-建筑[k].site[l].point_dist(建筑[i].site[j].origin) * 4) * 非法_权重;
+					分数 += -exp(-建筑[k].site[l].point_dist(建筑[i].site[j].origin) / 4) * 非法_权重;
 				}
 			}
 
