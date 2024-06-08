@@ -284,10 +284,10 @@ float 奖励函数(ground 场地, std::vector<building>& 建筑, bool& reset)
 
 			for (int k = 0; k < 16; k++)
 			{
-				if ((k == j) && (k == ((j + 15) % 16)))
-				{
-					continue;
-				}
+				//if ((k == j) && (k == ((j + 15) % 16)))
+				//{
+				//	continue;
+				//}
 				分数 += -exp(-建筑[i].site[k].point_dist(建筑[i].site[j].origin) / 4) * 非法_权重;
 			}
 
